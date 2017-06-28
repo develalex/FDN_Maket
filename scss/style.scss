@@ -1,0 +1,99 @@
+$WhiteFon: white;
+$YellowFon:yellow;
+$GrayFon: #d7d7d7;
+$blockArrowColor: #00fff5;
+@mixin top_arrow_border($color){
+   border-bottom: 12px solid $color;
+    border-top: 0; 
+}
+@mixin bottom_arrow_border($color){
+   border-top: 12px solid $color;
+    border-bottom: 0; 
+}
+@mixin left_arrow_border($color){
+   border-right: 12px solid $color;
+    border-left: 0; 
+}
+@mixin right_arrow_border($color){
+   border-left: 12px solid $color;
+    border-right: 0; 
+}
+body{
+    background-color: #f5f5f5;
+}
+h1{
+    font-size: 28px;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+h2{
+    font-size: 18px;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+h3{
+    font-size: 12px;
+    font-family: 'Montserrat-Regular',sans-serif;
+}
+p{
+    font-size: 14px;
+    font-family: 'Montserrat-Regular',sans-serif;
+} 
+h4{
+    font-size: 14px;
+    font-family: 'Montserrat-Bold',sans-serif;
+}
+//COLOR
+.yellowbackground{
+    background-color: #ffe400;
+}
+.bluebackground{
+    background-color: #2297d8;
+}
+.whitebackground{
+    
+}
+
+//Block SIZE
+.block{
+    position: relative;
+    width: 293px;
+    height: 293px;
+}
+.doubleblock{
+    
+}
+.reviewblock{
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+.squadblock{
+    position: relative;
+    width: 586px;
+    height: 586px;
+}
+//BLOCKARROW
+.blockarrow{
+    position: relative;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+}
+.left{
+    @include left_arrow_border($blockArrowColor);
+}
+.right{
+    @include right_arrow_border($blockArrowColor);
+}
+.top{
+    @include top_arrow_border($blockArrowColor)}
+
+.bottom{
+    @include bottom_arrow_border($blockArrowColor);
+}
+.kk{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
